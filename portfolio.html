@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <!--meta tag to make website work on cross-devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add the bootstrap link if you want default styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add the google-fonts Josefin Sans link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Add the swiper.css if you want default styling -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Add font-awesome if you want default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ADD the Animation if you want default styling
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- slick.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <!-- CSS progressbar-plugin -->
+    <link href="progressbar-lib/jquery.lineProgressbar.css" rel="stylesheet">
+    <!--CSS EXTERNAL LINK-->
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+
+    <!-- //===========================Header Start=================================// -->
+
+    <header id="header">
+
+        <nav class="nav-design navbar navbar-expand-xl ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="header-logo " src="images/main-logo.png"
+                        alt="missing"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNavDropdown" data-toggle="collapse">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item hide-ul-search">
+                            <a class="nav-search display-search" href="#"  onclick="openSearch()" >
+                                <img class="search-icon" src="images/home-search.png" alt="missing">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link-active1" class="nav-link  link-rest  nav-space" href="index.html">Home
+                                <span class="nav-dot">.</span>
+                            </a>
+                            <div class="arrow-box nav-box1">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="link-active2" class="nav-link link-rest  nav-space"
+                                href="portfolio.html">Portfolio <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box2">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="link-active3" class="nav-link link-rest  nav-space" href="Restauration.html">Blog
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box3">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="link-active4" class="nav-link link-rest  nav-space" href="Restauration.html">Faqs
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box4">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link-active5" class="nav-link link-rest  nav-space" href="Restauration.html">About
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box5">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item item-6">
+                            <a id="link-active6" class="nav-link nav-space dropdown-toggle" href="#"
+                                id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Pricing and Packages Mauritius</a>
+
+
+                            <!-- your mega menu starts here! -->
+                            <div id="link-active6" class="dropdown-menu dropdown-menu-right"
+                                aria-labelledby="servicesDropdown">
+
+                                <!-- the standard dropdown items -->
+                                <a class="dropdown-item item-head" href="#">What we do</a>
+                                <a class="dropdown-item item-head" href="#">How we fit your needs</a>
+
+                                <!-- next, a divider to tidy things up -->
+                                <div class="dropdown-divider"></div>
+
+                                <!-- finally, using flex to create your layout -->
+                                <div class="mega-menu align-items-start justify-content-start">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Development</div>
+                                            <a class="dropdown-item" href="#">Bespoke software</a>
+                                            <a class="dropdown-item" href="#">Mobile apps</a>
+                                            <a class="dropdown-item" href="#">Websites</a>
+                                        </div>
+
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Professional Services</div>
+                                            <a class="dropdown-item" href="#">Project rescue</a>
+                                            <a class="dropdown-item" href="#">Source code recovery</a>
+                                        </div>
+
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Fixed Price Services</div>
+                                            <a class="dropdown-item" href="#">Add cookie consent</a>
+                                            <a class="dropdown-item" href="#">Add captcha</a>
+                                            <a class="dropdown-item" href="#">Add core data</a>
+                                            <a class="dropdown-item" href="#">Custom error pages</a>
+                                            <a class="dropdown-item" href="#">Contact form creation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-box nav-box6">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <a class="nav-search hide-search" href="#" onclick="openSearch()">
+                    <img class="search-icon" src="images/home-search.png" alt="missing">
+                </a>
+
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div id="search-style" class="overlay-content">
+                      <form action=" " >
+                        <input class="search-input" type="search" placeholder="Search.." name="search">
+                        <button class="search-btn" type="submit"><i class=" fa fa-search"></i></button>
+                      </form>
+                    </div>
+                  </div>
+        </nav>
+
+        <div class="banner-wrapper">
+
+            <div class="banner-slide">
+                <div class="slide-box">
+                    <div class="bg-image">
+
+                        <img class="banner-layer" src="images/port-bg.png" alt="missing">
+                    </div>
+
+                    <div class="slide-info">
+                        <div class="container">
+                            <div class="banner-quote">
+                                <h5 class=" quote-info">WE ARE JHONY & DARIA</h5>
+                            </div>
+                            <h3 class="banner-heading">Photographer <span class="span-heading">& Retoucher</span></h3>
+                            <p class="banner-para">based in Mauritius Island and crazy in love husband and wife
+                                photographers. </p>
+
+                            <button class="btn-design btn-1">VIEW PORTFOLIO</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="banner-slide">
+                <div class="slide-box">
+                    <div class="bg-image img-1">
+                        <img class="banner-layer" src="images/port-bg.png" alt="missing">
+                    </div>
+
+                    <div class="slide-info">
+                        <div class="container">
+                            <div class="banner-quote">
+                                <h5 class=" quote-info">We Are JHony & daria</h5>
+                            </div>
+                            <h3 class="banner-heading">Capture <span class="span-heading">& Moments</span></h3>
+                            <p class="banner-para">We capture your happy moments and your bright smiles in one frame.
+                            </p>
+
+                            <button class="btn-design btn-1">VIEW PORTFOLIO</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- //===========================Header End=================================// -->
+
+    <!-- //===========================Portfolio Start=================================// -->
+    <section id="masonry">
+        <div class="container">
+            <h3 class="masonry-heading">Portfolio</h3>
+            <div class="masonry-layout">
+                <div class="masonry-info">
+                    <img class="masonry-square" src="images/masonry-s1.png" alt="missing">
+                    <img class="masonry-rectangle top" src="images/masonry-rec1.png" alt="missing">
+                </div>
+                <div class="masonry-info">
+                    <img class="masonry-rectangle" src="images/masonry-rec2.png" alt="missing">
+                    <img class="masonry-square top" src="images/masonry-s2.png" alt="missing">
+                </div>
+                <div class="masonry-info">
+                    <img class="masonry-square" src="images/masonry-s3.png" alt="missing">
+                    <img class="masonry-rectangle top" src="images/masonry-rec3.png" alt="missing">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //===========================Portfolio End=================================// -->
+    <!-- //===========================counter Start=================================// -->
+    <section id="counter">
+        <div class="container">
+            <h3 class="counter-h3">About Us</h3>
+            <p class="counter-p">we have been providing my clients with quality photography and retouching services.
+                Some of my works were awarded on a national level. Below are some facts about me.</p>
+            <div class="count-info">
+                <div class="count-box">
+                    <img class="count-image" src="images/icons/Image 2.png" alt="missing">
+                    <h3 class="count-h3 count">22</h3>
+                    <h4 class="count-h4">Photography Awards</h4>
+                </div>
+                <div class="count-box">
+                    <img class="count-image" src="images/icons/cam.png" alt="missing">
+                    <h3 class="count-h3 count">22</h3>
+                    <h4 class="count-h4">Photography Awards</h4>
+                </div>
+                <div class="count-box">
+                    <img class="count-image" src="images/icons/a.png" alt="missing">
+                    <h3 class="count-h3 count">22</h3>
+                    <h4 class="count-h4">Photography Awards</h4>
+                </div>
+                <div class="count-box">
+                    <img class="count-image" src="images/icons/df.png" alt="missing">
+                    <h3 class="count-h3 count">22</h3>
+                    <h4 class="count-h4">Photography Awards</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //===========================counter End=================================// -->
+    <section id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="swiper-container work-slider">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <h3 class="work-h3"> [<span class="work-span">OUR AWESOME WORK</span>]</h3>
+                                <p class="work-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button class="work-btn">SEE MORE WORK</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="work-h3"> [<span class="work-span">OUR AWESOME WORK</span>]</h3>
+                                <p class="work-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button class="work-btn">SEE MORE WORK</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="work-h3"> [<span class="work-span">OUR AWESOME WORK</span>]</h3>
+                                <p class="work-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button class="work-btn">SEE MORE WORK</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="work-h3"> [<span class="work-span">OUR AWESOME WORK</span>]</h3>
+                                <p class="work-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button class="work-btn">SEE MORE WORK</button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="work-images ">
+                        <div class="work-img img1"></div>
+                        <div class="work-img img2"></div>
+                        <div class="work-img img3"></div>
+                        <div class="work-img img4"></div>
+                    </div>
+                    <div class="pagination-cont">
+                        <div class="custom-swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- //===========================Reviews Start=================================// -->
+    <section id="reviews">
+        <div class="container">
+            <p class="review-head"> <span class="review-span"> LOVED </span>BY OUR CLIENTS</p>
+            <div class="swiper-container review-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-info">
+                            <div class="review-box">
+                                <div class="item-1">
+                                    <img class="item1-img" src="images/lg.png" alt="missing">
+                                </div>
+                                <div class="item-2">
+                                    <img class="item2-img" src="images/sm.png" alt="missing">
+                                    <img class="item2-img img1" src="images/sm1.png" alt="missing">
+                                </div>
+                                <div class="item-3 item-1">
+                                    <img class="item-3-img item-1-img" src="images/lg1.png" alt="missing">
+                                </div>
+                            </div>
+                            <div class="review-box1">
+                                <p class="review-para review-box1-name">We had an amazing photo session with John. We
+                                    wanted to capture special moments on our beloved island and it was successful! The
+                                    photos were very beautiful and the communication during the shooting was fun. Next
+                                    time we
+                                    will turn to you again. Thank you so much!</p>
+                                <div class="review-box1-info">
+                                    <div class="review-box1-item">
+                                        <img class="review-box1-img" src="images/client-r.png" alt="missing">
+                                    </div>
+                                    <div class="review-box1-item1">
+                                        <h3 class="review-box1-head">Sofia</h3>
+                                        <h3 class="review-box1-name">Client of Wedding Event</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-info">
+                            <div class="review-box">
+                                <div class="item-1">
+                                    <img class="item1-img" src="images/lg.png" alt="missing">
+                                </div>
+                                <div class="item-2">
+                                    <img class="item2-img" src="images/sm.png" alt="missing">
+                                    <img class="item2-img img1" src="images/sm1.png" alt="missing">
+                                </div>
+                                <div class="item-3 item-1">
+                                    <img class="item-3-img item-1-img" src="images/lg1.png" alt="missing">
+                                </div>
+                            </div>
+                            <div class="review-box1">
+                                <p class="review-para review-box1-name">We had an amazing photo session with John. We
+                                    wanted to capture special moments on our beloved island and it was successful! The
+                                    photos were very beautiful and the communication during the shooting was fun. Next
+                                    time we
+                                    will turn to you again. Thank you so much!</p>
+                                <div class="review-box1-info">
+                                    <div class="review-box1-item">
+                                        <img class="review-box1-img" src="images/client-r.png" alt="missing">
+                                    </div>
+                                    <div class="review-box1-item1">
+                                        <h3 class="review-box1-head">Sofia</h3>
+                                        <h3 class="review-box1-name">Client of Wedding Event</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-info">
+                            <div class="review-box">
+                                <div class="item-1">
+                                    <img class="item1-img" src="images/lg.png" alt="missing">
+                                </div>
+                                <div class="item-2">
+                                    <img class="item2-img" src="images/sm.png" alt="missing">
+                                    <img class="item2-img img1" src="images/sm1.png" alt="missing">
+                                </div>
+                                <div class="item-3 item-1">
+                                    <img class="item-3-img item-1-img" src="images/lg1.png" alt="missing">
+                                </div>
+                            </div>
+                            <div class="review-box1">
+                                <p class="review-para review-box1-name">We had an amazing photo session with John. We
+                                    wanted to capture special moments on our beloved island and it was successful! The
+                                    photos were very beautiful and the communication during the shooting was fun. Next
+                                    time we
+                                    will turn to you again. Thank you so much!</p>
+                                <div class="review-box1-info">
+                                    <div class="review-box1-item">
+                                        <img class="review-box1-img" src="images/client-r.png" alt="missing">
+                                    </div>
+                                    <div class="review-box1-item1">
+                                        <h3 class="review-box1-head">Sofia</h3>
+                                        <h3 class="review-box1-name">Client of Wedding Event</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination">
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- //===========================Reviews End=================================// -->
+    </section>
+    <!-- //===========================FAQ start=================================// -->
+    <section id="faq">
+        <div class="container">
+            <h3 class="faq-h3">Frequently Asked Questions</h3>
+            <div class="row">
+                <div class="col-6">
+                    <div class="faq-box">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <div class="faq-content d-flex " data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <button class="faq-minus">-</button>
+                                            <button class="faq-plus">+</button>
+                                            <p class="faq-p">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry ?</p>
+                                        </div>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="swiper-container accordionSwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem
+                                                    Ipsum has been the industry's standard dummy text ever since the
+                                                    1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book. It has survived not only five centuries, but also the leap
+                                                    into electronic typesetting,
+                                                    remaining essentially unchanged.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    It has survived not only five centuries, but also the leap into
+                                                    electronic typesetting,
+                                                    remaining essentially unchanged.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    Ipsum has been the industry's standard dummy text ever since the
+                                                    1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    industry's standard dummy text ever since the 1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book. It has survived not only five centuries,
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <div class="faq-content d-flex " data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            <button class="faq-minus">-</button>
+                                            <button class="faq-plus">+</button>
+                                            <p class="faq-p">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry ?</p>
+                                        </div>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="swiper-container accordionSwiper1">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem
+                                                    Ipsum has been the industry's standard dummy text ever since the
+                                                    1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book. It has survived not only five centuries, but also the leap
+                                                    into electronic typesetting,
+                                                    remaining essentially unchanged.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    It has survived not only five centuries, but also the leap into
+                                                    electronic typesetting,
+                                                    remaining essentially unchanged.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    Ipsum has been the industry's standard dummy text ever since the
+                                                    1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    industry's standard dummy text ever since the 1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book. It has survived not only five centuries,
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <div class="faq-content d-flex " data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="true"
+                                            aria-controls="collapseThree">
+                                            <button class="faq-minus">-</button>
+                                            <button class="faq-plus">+</button>
+                                            <p class="faq-p">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry ?</p>
+                                        </div>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="swiper-container accordionSwiper2">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem
+                                                    Ipsum has been the industry's standard dummy text ever since the
+                                                    1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book. It has survived not only five centuries, but also the leap
+                                                    into electronic typesetting,
+                                                    remaining essentially unchanged.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    It has survived not only five centuries, but also the leap into
+                                                    electronic typesetting,
+                                                    remaining essentially unchanged.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    Ipsum has been the industry's standard dummy text ever since the
+                                                    1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book.
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    industry's standard dummy text ever since the 1500s, when an
+                                                    unknown printer took a galley of type and scrambled it to make a
+                                                    type specimen
+                                                    book. It has survived not only five centuries,
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="faq-box1">
+                        <h3 class="faq-label">Photography</h3>
+                        <div id="jq"></div>
+                    </div>
+                    <div class="faq-box1">
+                        <h3 class="faq-label">Creativity</h3>
+                        <div id="jq-1"></div>
+                    </div>
+                    <div class="faq-box1">
+                        <h3 class="faq-label">Retouching</h3>
+                        <div id="jq-2"></div>
+                    </div>
+                    <div class="faq-box1">
+                        <h3 class="faq-label">Communication</h3>
+                        <div id="jq-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //===========================FAQ End=================================// -->
+    </section>
+
+    <!-- //===========================Blog Start=================================// -->
+    <section id="blog">
+        <div class="container">
+            <h3 class="blog-head">RECENT BLOG POSTS</h3>
+            <p class="blog-para">We capture the real story of love and we believe every picture has it's own story.</p>
+
+            <div class="blog-card">
+
+                <div class="card">
+                    <img src="images/blog-img.png" class=" blog-img" alt="missing">
+                    <div class="blog-box">
+                        <p class="blog-p">Beach</p>
+                        <p class="blog-p1 blog-p">Wedding</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+                        <p class="card-text">DANA & JOHN | BEACH WEDDING PHOTOGRAPHY</p>
+                        <p class="card-text1">Dana & John | Beach Wedding Photography Today’s post is featuring this
+                            adorably happy beach wedding photography of the couple, Dana + John. They got...</p>
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png"
+                                alt="missing"></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/blog-img1.png" class=" blog-img" alt="missing">
+                    <div class="blog-box">
+                        <p class="blog-p">Beach</p>
+                        <p class="blog-p1 blog-p">Wedding</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+                        <p class="card-text">DANA & JOHN | BEACH WEDDING PHOTOGRAPHY</p>
+                        <p class="card-text1">Dana & John | Beach Wedding Photography Today’s post is featuring this
+                            adorably happy beach wedding photography of the couple, Dana + John. They got...</p>
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png"
+                                alt="missing"></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/blog-img2.png" class=" blog-img" alt="missing">
+                    <div class="blog-box">
+                        <p class="blog-p">Beach</p>
+                        <p class="blog-p1 blog-p">Wedding</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+                        <p class="card-text">DANA & JOHN | BEACH WEDDING PHOTOGRAPHY</p>
+                        <p class="card-text1">Dana & John | Beach Wedding Photography Today’s post is featuring this
+                            adorably happy beach wedding photography of the couple, Dana + John. They got...</p>
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png"
+                                alt="missing"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //===========================Blog End=================================// -->
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-detail">
+
+
+                <div class="footer-box">
+                    <div class="footer-info space-box">
+                        <h3 class="footer-h">SERVICES</h3>
+                        <a href="">
+                            <p class="footer-p para-design">FASHION & BEAUTY PHOTOGRAPHY IN MAURITIUS</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p1  para-design">WEDDING PHOTOGRAPHY MAURITIOUS</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p2  para-design">TRIP PHOTO SESSION PHOTOGRAPHY </p>
+                        </a>
+                    </div>
+
+
+                    <div class="footer-info1 space-box">
+                        <h3 class="footer-h">COMPANY</h3>
+                        <a href="">
+                            <p class="footer-p  para-design">About Us</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p1  para-design">Blogs</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p2  para-design">Faqs</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p3  para-design">Terms & Conditions</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p4  para-design">Privacy Policy</p>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-box">
+                    <div class="footer-info2 space-box">
+                        <h3 class="footer-h">CONTACT INFO</h3>
+                        <div class="contact-gap footer-gap1">
+                            <p class="footer-p  para-design">Address: </p>
+                            <a href=""> <span class="footer-span">
+                                    Clairfonds 1, Phoenix, 73514,
+                                    Mauritius</span></a>
+                        </div>
+                        <div class="contact-gap">
+                            <a href="">
+                                <p class="footer-p1  para-design">Phone:<span class="footer-span phone-span">(+230)
+                                        58057310</span>
+                                </p>
+                            </a>
+                            <a href="">
+                                <h3 class="footer-span phone-span1"> (+230) 58290670</h3>
+                            </a>
+                        </div>
+                        <div class="contact-gap">
+                            <a href="">
+                                <p class="footer-p2  para-design">Mail:<span
+                                        class="footer-span info-span">info@focusphotography.ru</span> </p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-info3">
+                        <h3 class="footer-h">NEWSLETTER SIGNUP</h3>
+                        <p class="footer-p para-design">Be sure to subscribe to get in touch with all our exclusive
+                            deals.
+                        </p>
+                        <p class="footer-p1  para-design">Don't worry, we won't spam you.</p>
+                        <input type="text" name="" class="footer-input">
+                        <button class="footer-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="copyright">
+        <div class="container">
+            <div class="copy-info">
+                <h3 class="copy-h3">Focus Photography | BRN C18155018 | Copyright © 2018- 2019</h3>
+                <div class="copy-box">
+                    <a href="https://en-gb.facebook.com/"><i class="fa fa-facebook color-box"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/"> <i class="fa fa-instagram color-box"
+                            aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/?lang=en"> <i class="fa fa-twitter color-box"
+                            aria-hidden="true"></i></a>
+                    <a href="https://vk.com/?lang=en"> <i class="fa fa-vk color-box" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Add JS links if you want default styling -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <!-- Add SWIPER-JS link if you want default styling -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <!-- Add SLICK link if you want default styling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js "></script>
+    <!-- Add Progressbar link if you want default styling -->
+    <script src="progressbar-lib/jquery.lineProgressbar.js"></script>
+
+
+
+
+    <script>
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+          var element = document.getElementById("search-style");
+          element.classList.add("mystyle");
+        }
+        
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+        </script>
+        
+
+    <!-- $(document).ready(function () {
+         $(".nav-item ").hover(function () {    
+              $(this).toggleClass("active ");                  
+       });
+         }); -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        $('.banner-wrapper').slick({
+            infinite: true,
+            speed: 200,
+            fade: true,
+            infinite: true,
+            cssEase: 'linear',
+            autoplay: true,
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+
+            var mySwiper = new Swiper(".about-slider ", {
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next ",
+                    prevEl: ".swiper-button-prev "
+                }
+
+
+            });
+        });
+    </script>
+    <!--  review slider Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".review-slider", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            speed: 200,
+            autoplay: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <!-- count function -->
+    <script>
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        })
+    </script>
+    <!-- progress-bar -->
+    <script>
+        $('#jq').LineProgressbar({
+
+            percentage: 90,
+
+            fillBackgroundColor: '#EBB85E',
+
+            backgroundColor: '#rgb(44 44 44 / 20%)',
+
+            radius: '0px',
+
+            height: '2px',
+
+            width: '100%'
+
+        });
+        $('#jq-1').LineProgressbar({
+            percentage: 65,
+            fillBackgroundColor: '#FF0000',
+            backgroundColor: '#rgb(44 44 44 / 20%)',
+            radius: '0px',
+            height: '2px',
+            width: '100%'
+        });
+        $('#jq-2').LineProgressbar({
+            percentage: 100,
+            fillBackgroundColor: '#2D4FF9',
+            backgroundColor: '#rgb(44 44 44 / 20%)',
+            radius: '0px',
+            height: '2px',
+            width: '100%',
+        });
+        $('#jq-3').LineProgressbar({
+            percentage: 75,
+            fillBackgroundColor: '#20C997',
+            backgroundColor: '#rgb(44 44 44 / 20%)',
+            radius: '0px',
+            height: '2px',
+            width: '100%'
+        });
+
+    </script>
+
+        <script>
+            var swiper = new Swiper(".accordionSwiper", {});
+               
+        </script>
+        <script>
+             var swiper = new Swiper(".accordionSwiper1", {
+                observer: true,
+    observeParents: true,
+            });
+        </script>
+        <script>
+       var swiper = new Swiper(".accordionSwiper2", {
+        observer: true,
+    observeParents: true,
+       });
+        </script>
+    <script>
+        // var swiper = new Swiper(".work-slider", {
+        //     infinite: false,
+        //     loop:true,
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //     },
+        // });
+        var swiper = new Swiper('.work-slider', {
+            infinite: false,
+            loop: false,
+            slidesPerView: 1,
+            centeredSlides: true,
+            pagination: {
+                el: ".custom-swiper-pagination",
+                clickable: true,
+                renderBullet: (index, className) => {
+                    return '<span class="' + className + '">' + ("") + "</span>";
+                },
+            },
+        });
+
+        $(document).ready(function () {
+
+            swiper.on('slideChange', function () {
+                if (this.activeIndex === 0) {
+                    $('.work-images').removeClass('active3');
+                    $('.work-images').removeClass('active2');
+                    $('.work-images').removeClass('active1');
+                    $('.work-images').addClass('active0');
+                }
+                else if (this.activeIndex === 1) {
+                    $('.work-images').removeClass('active0');
+                    $('.work-images').removeClass('active3');
+                    $('.work-images').removeClass('active2');
+                    $('.work-images').addClass('active1');
+                }
+                else if (this.activeIndex === 2) {
+                    $('.work-images').removeClass('active3');
+                    $('.work-images').removeClass('active0');
+                    $('.work-images').removeClass('active1');
+                    $('.work-images').addClass('active2');
+                }
+                else if (this.activeIndex === 3) {
+                    $('.work-images').removeClass('active2');
+                    $('.work-images').removeClass('active1');
+                    $('.work-images').removeClass('active0');
+                    $('.work-images').addClass('active3');
+                }
+
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

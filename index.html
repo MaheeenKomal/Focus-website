@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Focus-home</title>
+    <!--meta tag to make website work on cross-devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add the bootstrap link if you want default styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add the google-fonts Josefin Sans link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Add the swiper.css if you want default styling -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Add font-awesome if you want default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ADD the Animation if you want default styling
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lg-thumbnail.min.css" />
+    <!-- slick.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+    <!--CSS EXTERNAL LINK-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- //===========================Header Start=================================// -->
+
+    <header id="header">
+
+        <nav class="nav-design navbar navbar-expand-xl ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="header-logo " src="images/main-logo.png"
+                        alt="missing"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNavDropdown" data-toggle="collapse">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item hide-ul-search">
+                            <a class="nav-search display-search" href="#"  onclick="openSearch()" >
+                                <img class="search-icon" src="images/home-search.png" alt="missing">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link-active1" class="nav-link  link-rest  nav-space" href="index.html">Home
+                                <span class="nav-dot">.</span>
+                            </a>
+                            <div class="arrow-box nav-box1">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a id="link-active2" class="nav-link link-rest  nav-space"
+                                href="portfolio.html">Portfolio <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box2">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="link-active3" class="nav-link link-rest  nav-space" href="Restauration.html">Blog
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box3">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="link-active4" class="nav-link link-rest  nav-space" href="Restauration.html">Faqs
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box4">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link-active5" class="nav-link link-rest  nav-space" href="Restauration.html">About
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box5">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item item-6">
+                            <a id="link-active6" class="nav-link nav-space dropdown-toggle" href="#"
+                                id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Pricing and Packages Mauritius</a>
+
+
+                            <!-- your mega menu starts here! -->
+                            <div id="link-active6" class="dropdown-menu dropdown-menu-right"
+                                aria-labelledby="servicesDropdown">
+
+                                <!-- the standard dropdown items -->
+                                <a class="dropdown-item item-head" href="#">What we do</a>
+                                <a class="dropdown-item item-head" href="#">How we fit your needs</a>
+
+                                <!-- next, a divider to tidy things up -->
+                                <div class="dropdown-divider"></div>
+
+                                <!-- finally, using flex to create your layout -->
+                                <div class="mega-menu align-items-start justify-content-start">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Development</div>
+                                            <a class="dropdown-item" href="#">Bespoke software</a>
+                                            <a class="dropdown-item" href="#">Mobile apps</a>
+                                            <a class="dropdown-item" href="#">Websites</a>
+                                        </div>
+
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Professional Services</div>
+                                            <a class="dropdown-item" href="#">Project rescue</a>
+                                            <a class="dropdown-item" href="#">Source code recovery</a>
+                                        </div>
+
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Fixed Price Services</div>
+                                            <a class="dropdown-item" href="#">Add cookie consent</a>
+                                            <a class="dropdown-item" href="#">Add captcha</a>
+                                            <a class="dropdown-item" href="#">Add core data</a>
+                                            <a class="dropdown-item" href="#">Custom error pages</a>
+                                            <a class="dropdown-item" href="#">Contact form creation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-box nav-box6">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <a class="nav-search hide-search" href="#" onclick="openSearch()">
+                    <img class="search-icon" src="images/home-search.png" alt="missing">
+                </a>
+
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div id="search-style" class="overlay-content">
+                      <form >
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                    </div>
+                  </div>
+        </nav>
+        <div class="banner-wrapper">
+
+            <div class="banner-slide">
+                <div class="bg-image">
+                    <div class="container">
+                        <div class="slide-info">
+                            <div class="banner-quote">
+                                <h5 class=" quote-info">Welcome to</h5>
+                            </div>
+                            <h3 class="banner-heading">FOCUS PHOTOGRAPHY, MAURITIUS</h3>
+                            <p class="banner-para">Browse through or specialty photography services below and discover
+                                the beautiful tropical island of Mauritius through our breathtaking photos</p>
+                            <div class="banner-button d-flex">
+                                <button class="btn-design btn-1">Book Now</button>
+                                <button class="btn-design btn-2">Contact</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bannner-text d-flex">
+                        <p class="banner-num">01</p>
+                    </div>
+                    <a class="move-down" href="#about">
+                        <div class="img-box">
+                            <img class="img-down" src="images/move-down.png" alt="missing">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="banner-slide">
+                <div class="bg-image bg-image1">
+                    <div class="container">
+                        <div class="slide-info">
+                            <div class="banner-quote">
+                                <h5 class=" quote-info">Welcome to</h5>
+                            </div>
+                            <h3 class="banner-heading">FOCUS PHOTOGRAPHY, MAURITIUS</h3>
+                            <p class="banner-para">Browse through or specialty photography services below and discover
+                                the beautiful tropical island of Mauritius through our breathtaking photos</p>
+                            <div class="banner-button d-flex ">
+                                <button class="btn-design btn-1">Book Now</button>
+                                <button class="btn-design btn-2">Contact</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="bannner-text d-flex">
+                        <p class="banner-num">02</p>
+                    </div>
+                    <a class="move-down" href="#about">
+                        <div class="img-box">
+                            <img class="img-down" src="images/move-down.png" alt="missing">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //===========================Header End=================================// -->
+
+    <!-- //===========================About Start=================================// -->
+    <section id="about">
+        <div class="about-bg"></div>
+        <div class="container">
+            <div class="about-box">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="about-intro">
+                            <p class="about-p">ABOUT FOCUS PHOTOGRAPHY MAURITIUS</p>
+                        </div>
+                    </div>
+                    <div class="col-3 show-me">
+                        <div class="about-info">
+                            <p class="about-para">We are Johny and Daria, based in Mauritius Island and crazy-in-love
+                                husband and wife photographers. Love is what motivates and inspires us every day. We are
+                                so blessed to be able to photograph the love stories of so many awesome
+                                and unique couples. We are goofy and spontaneous, romantic and sarcastic. We are big
+                                thinkers and dreamers. We want to capture real moments, genuine smiles and raw emotion.
+                            </p>
+                            <p class="about-more">View More <img class="about-img" src="images/arrow-right.png"
+                                    alt="missing"></p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="about-info">
+                            <p class="about-para para-1">
+                                We are an international team of photographers, in love with the island of Mauritius, its
+                                nature & its beaches.
+                            </p>
+                            <p class="about-para para-2">As professionals & full-time photographers, we know all the
+                                hidden gems and places in Mauritius and can create the most beautiful shots with you.
+                                Whatever the season and the conditions, we will take you to the places that suit
+                                you best – with the atmosphere you are looking for – to create timeless memories…</p>
+                        </div>
+                    </div>
+                    <div class="about-info hide-me">
+                        <p class="about-para">We are Johny and Daria, based in Mauritius Island and crazy-in-love
+                            husband and wife photographers. Love is what motivates and inspires us every day. We are so
+                            blessed to be able to photograph the love stories of so many awesome
+                            and unique couples. We are goofy and spontaneous, romantic and sarcastic. We are big
+                            thinkers and dreamers. We want to capture real moments, genuine smiles and raw emotion.
+                        </p>
+                        <p class="about-more">View More <img class="about-img" src="images/arrow-right.png"
+                                alt="missing"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="about-slider-info">
+            <div class="swiper-container about-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slid-1">
+                        <img class="slider-img slide-img" src="images/slid1.png" alt="missing">
+                    </div>
+                    <div class="swiper-slide slid-2">
+                        <img class="slider-img" src="images/slid3.png" alt="missing">
+                    </div>
+                    <div class="swiper-slide slid-3">
+                        <img class="slider-img slid-img" src="images/slid1.png" alt="missing">
+                    </div>
+                    <div class="swiper-slide slid-2">
+                        <img class="slider-img" src="images/slid3.png" alt="missing">
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- <div class="swiper-container about-slider">
+                Additional required wrapper -->
+            <!--
+                <div class="swiper-wrapper">
+                     Slides 
+                    <div class="swiper-slide">Slide 1
+                    </div>
+                    <div class="swiper-slide">Slide 2
+                    </div>
+                    <div class="swiper-slide">Slide 3
+                    </div>
+                    <div class="swiper-slide">Slide 4
+                    </div>
+                    <div class="swiper-slide">Slide 5
+                    </div>
+                </div>
+                 If we need navigation buttons 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div> -->
+        </div>
+        <!-- //===========================About End=================================// -->
+    </section>
+
+    <section id="mauritious">
+        <!-- //===========================Mauritious Start=================================// -->
+        <div class="container">
+            <div class="mauritious-info">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="maurit-box">
+                            <h3 class="maurit-head">
+                                WEDDING PHOTOGRAPHY MAURITIOUS
+                            </h3>
+                            <p class="maurit-para">Don't let anyone tell you it's worth skimping on your wedding
+                                photography or videography. After the wedding day, those wedding photos and video are
+                                all that's left to help you remember the day. We will ensure your wedding photos
+                                are unique and special.</p>
+                            <p class="about-more">View More <img class="about-img" src="images/arrow-right.png"
+                                    alt="missing"></p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="maurit-box1">
+
+                            <div class="maurit-shape-box">
+                                <img class="maurit-shape" src="images/maurit-image.png" alt="missing">
+                                <img class="maurit-person" src="images/mauri-1.png" alt="mising">
+                                <img class="maurit-floral" src="images/floral-design.png" alt="missing">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mauritious-1">
+            <img class="cam2-img" src="images/cam-2.png" alt="missing">
+            <div class="container">
+                <div class="mauritious-info">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="maurit-box1">
+                                <div class="maurit-shape">
+                                    <img class="maurit-shape" src="images/maurit-image.png" alt="missing">
+                                    <img class="maurit-person" src="images/mauri-1.png" alt="mising">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="maurit-box">
+                                <h3 class="maurit-head">
+                                    FASHION & BEAUTY PHOTOGRAPHY IN MAURITIUS
+                                </h3>
+                                <p class="maurit-para">Fashion & Beauty is a wonderful genre of photography that
+                                    includes commercial and editorial imagery, as well as simple beauty portraits, so
+                                    almost anyone who appreciates fashion and beauty can find something in it for them.
+                                </p>
+                                <p class="about-more">View More <img class="about-img" src="images/arrow-right.png"
+                                        alt="missing"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mauritious-3">
+            <img class="cam2-img-right" src="images/cam-2-right.png" alt="missing">
+            <div class="container">
+                <div class="mauritious-info">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="maurit-box">
+                                <h3 class="maurit-head">
+
+                                    TRIP PHOTO SESSION PHOTOGRAPHY
+                                </h3>
+                                <p class="maurit-para">Our Mauritius Tourism Photography session is all about having fun
+                                    while discovering the most beautiful locations in Mauritius, Let Focus Photography
+                                    capture magical moments on your vacation. For only the best Holiday trip
+                                    photography, call us to make arrangements.</p>
+                                <p class="about-more">View More <img class="about-img" src="images/arrow-right.png"
+                                        alt="missing"></p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="maurit-box1">
+
+                                <div class="maurit-shape-box">
+                                    <img class="maurit-shape" src="images/maurit-image.png" alt="missing">
+                                    <img class="maurit-person" src="images/mauri-1.png" alt="mising">
+                                    <img class="maurit-floral" src="images/floral-design.png" alt="missing">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //===========================mauritious End=================================// -->
+    </section>
+    <!-- //===========================isotope Start=================================// -->
+    <section id="isotope">
+        <div class="container">
+            <div class="filter">
+                <button data-name='*' class="iso-btn">#All project</button>
+                <button data-name=".profile" class="iso-btn">#Profile</button>
+                <button data-name=".fashion" class="iso-btn">#Fassion</button>
+                <button data-name=".business" class="iso-btn">#Business</button>
+                <button data-name=".realist" class="iso-btn">#Realist</button>
+            </div>
+            <!-- <div class="sort">
+        <h1>sorting</h1>
+        <button data-name='name' class="btn btn-primary">name</button>
+        <button data-name='original-order' class="btn btn-info active">original</button>
+        <button data-name='random' class="btn btn-dark">random</button>
+      </div> -->
+            <div class="grid" id="gallery">
+                <div class="grid-item realist">
+                    <div class="iso-overlay" href="images/masonry-s1.png"
+                        data-external-thumb-image="images/masonry-s1.png">
+                        <div class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-s1.png">
+
+                </div>
+
+                <div class="grid-item profile">
+                    <div class="iso-overlay"   href="images/masonry-s2.png" data-external-thumb-image="images/masonry-s2.png">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true" ></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-s2.png">
+            
+                </div>
+                <div class="grid-item fashion">
+                    <div class="iso-overlay" href="images/masonry-s1.png"  data-external-thumb-image="images/masonry-s1.png">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true" ></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-s1.png">
+             
+                </div>
+                <div class="grid-item business">
+                    <div class="iso-overlay"   href="images/masonry-rec3.png" data-external-thumb-image="images/masonry-rec3.png">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"
+                              ></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-rec3.png">
+                </div>
+                <div class="grid-item realist">
+                    <div class="iso-overlay"  href="images/masonry-rec1.png" data-external-thumb-image="images/masonry-rec1.png" >
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-rec1.png">
+            
+                </div>
+                <div class="grid-item profile">
+                    <div class="iso-overlay"  href="images/masonry-rec2.png"  data-external-thumb-image="images/masonry-rec2.png">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true" ></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true" ></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-rec2.png">
+              
+                </div>
+                <div class="grid-item fashion">
+                    <div class="iso-overlay"  href="images/masonry-s1.png" data-external-thumb-image="images/masonry-s1.png">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-s1.png">
+             
+                </div>
+                <div class="grid-item profile">
+                    <div class="iso-overlay"  href="images/masonry-s3.png" data-external-thumb-image="images/masonry-s3.png">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true" ></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-s3.png">
+          
+                </div>
+                <div class="grid-item business">
+                    <div class="iso-overlay"   href="images/masonry-s2.png" data-external-thumb-image="images/masonry-s2.png">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true" ></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image" src="images/masonry-s2.png">
+         
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- //===========================isotop End=================================// -->
+    </section>
+
+    <!-- //===========================Reviews Start=================================// -->
+    <section id="reviews">
+        <div class="container">
+            <p class="review-head"> <span class="review-span"> LOVED </span>BY OUR CLIENTS</p>
+            <div class="swiper-container review-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-info">
+                            <div class="review-box">
+                                <div class="item-1">
+                                    <img class="item1-img" src="images/lg.png" alt="missing">
+                                </div>
+                                <div class="item-2">
+                                    <img class="item2-img" src="images/sm.png" alt="missing">
+                                    <img class="item2-img img1" src="images/sm1.png" alt="missing">
+                                </div>
+                                <div class="item-3 item-1">
+                                    <img class="item-3-img item-1-img" src="images/lg1.png" alt="missing">
+                                </div>
+                            </div>
+                            <div class="review-box1">
+                                <p class="review-para review-box1-name">We had an amazing photo session with John. We
+                                    wanted to capture special moments on our beloved island and it was successful! The
+                                    photos were very beautiful and the communication during the shooting was fun. Next
+                                    time we
+                                    will turn to you again. Thank you so much!</p>
+                                <div class="review-box1-info">
+                                    <div class="review-box1-item">
+                                        <img class="review-box1-img" src="images/client-r.png" alt="missing">
+                                    </div>
+                                    <div class="review-box1-item1">
+                                        <h3 class="review-box1-head">Sofia</h3>
+                                        <h3 class="review-box1-name">Client of Wedding Event</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-info">
+                            <div class="review-box">
+                                <div class="item-1">
+                                    <img class="item1-img" src="images/lg.png" alt="missing">
+                                </div>
+                                <div class="item-2">
+                                    <img class="item2-img" src="images/sm.png" alt="missing">
+                                    <img class="item2-img img1" src="images/sm1.png" alt="missing">
+                                </div>
+                                <div class="item-3 item-1">
+                                    <img class="item-3-img item-1-img" src="images/lg1.png" alt="missing">
+                                </div>
+                            </div>
+                            <div class="review-box1">
+                                <p class="review-para review-box1-name">We had an amazing photo session with John. We
+                                    wanted to capture special moments on our beloved island and it was successful! The
+                                    photos were very beautiful and the communication during the shooting was fun. Next
+                                    time we
+                                    will turn to you again. Thank you so much!</p>
+                                <div class="review-box1-info">
+                                    <div class="review-box1-item">
+                                        <img class="review-box1-img" src="images/client-r.png" alt="missing">
+                                    </div>
+                                    <div class="review-box1-item1">
+                                        <h3 class="review-box1-head">Sofia</h3>
+                                        <h3 class="review-box1-name">Client of Wedding Event</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-info">
+                            <div class="review-box">
+                                <div class="item-1">
+                                    <img class="item1-img" src="images/lg.png" alt="missing">
+                                </div>
+                                <div class="item-2">
+                                    <img class="item2-img" src="images/sm.png" alt="missing">
+                                    <img class="item2-img img1" src="images/sm1.png" alt="missing">
+                                </div>
+                                <div class="item-3 item-1">
+                                    <img class="item-3-img item-1-img" src="images/lg1.png" alt="missing">
+                                </div>
+                            </div>
+                            <div class="review-box1">
+                                <p class="review-para review-box1-name">We had an amazing photo session with John. We
+                                    wanted to capture special moments on our beloved island and it was successful! The
+                                    photos were very beautiful and the communication during the shooting was fun. Next
+                                    time we
+                                    will turn to you again. Thank you so much!</p>
+                                <div class="review-box1-info">
+                                    <div class="review-box1-item">
+                                        <img class="review-box1-img" src="images/client-r.png" alt="missing">
+                                    </div>
+                                    <div class="review-box1-item1">
+                                        <h3 class="review-box1-head">Sofia</h3>
+                                        <h3 class="review-box1-name">Client of Wedding Event</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination">
+                </div>
+                <div class="pagination-round">
+                </div>
+            </div>
+        </div>
+        <!-- //===========================Reviews End=================================// -->
+    </section>
+
+    <!-- //===========================Blog Start=================================// -->
+    <section id="blog">
+        <div class="container">
+            <h3 class="blog-head">RECENT BLOG POSTS</h3>
+            <p class="blog-para">We capture the real story of love and we believe every picture has it's own story.</p>
+
+            <div class="blog-card">
+
+                <div class="card">
+                    <img src="images/blog-img.png" class=" blog-img" alt="missing">
+                    <div class="blog-box">
+                        <p class="blog-p">Beach</p>
+                        <p class="blog-p1 blog-p">Wedding</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+                        <p class="card-text">DANA & JOHN | BEACH WEDDING PHOTOGRAPHY</p>
+                        <p class="card-text1">Dana & John | Beach Wedding Photography Today’s post is featuring this
+                            adorably happy beach wedding photography of the couple, Dana + John. They got...</p>
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png"
+                                alt="missing"></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/blog-img1.png" class=" blog-img" alt="missing">
+                    <div class="blog-box">
+                        <p class="blog-p">Beach</p>
+                        <p class="blog-p1 blog-p">Wedding</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+                        <p class="card-text">DANA & JOHN | BEACH WEDDING PHOTOGRAPHY</p>
+                        <p class="card-text1">Dana & John | Beach Wedding Photography Today’s post is featuring this
+                            adorably happy beach wedding photography of the couple, Dana + John. They got...</p>
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png"
+                                alt="missing"></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/blog-img2.png" class=" blog-img" alt="missing">
+                    <div class="blog-box">
+                        <p class="blog-p">Beach</p>
+                        <p class="blog-p1 blog-p">Wedding</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+                        <p class="card-text">DANA & JOHN | BEACH WEDDING PHOTOGRAPHY</p>
+                        <p class="card-text1">Dana & John | Beach Wedding Photography Today’s post is featuring this
+                            adorably happy beach wedding photography of the couple, Dana + John. They got...</p>
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png"
+                                alt="missing"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //===========================Blog End=================================// -->
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-detail">
+
+
+                <div class="footer-box">
+                    <div class="footer-info space-box">
+                        <h3 class="footer-h">SERVICES</h3>
+                        <a href="">
+                            <p class="footer-p para-design">FASHION & BEAUTY PHOTOGRAPHY IN MAURITIUS</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p1  para-design">WEDDING PHOTOGRAPHY MAURITIOUS</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p2  para-design">TRIP PHOTO SESSION PHOTOGRAPHY </p>
+                        </a>
+                    </div>
+
+
+                    <div class="footer-info1 space-box">
+                        <h3 class="footer-h">COMPANY</h3>
+                        <a href="">
+                            <p class="footer-p  para-design">About Us</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p1  para-design">Blogs</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p2  para-design">Faqs</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p3  para-design">Terms & Conditions</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p4  para-design">Privacy Policy</p>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-box">
+                    <div class="footer-info2 space-box">
+                        <h3 class="footer-h">CONTACT INFO</h3>
+                        <div class="contact-gap footer-gap1">
+                            <p class="footer-p  para-design">Address: </p>
+                            <a href=""> <span class="footer-span">
+                                    Clairfonds 1, Phoenix, 73514,
+                                    Mauritius</span></a>
+                        </div>
+                        <div class="contact-gap">
+                            <a href="">
+                                <p class="footer-p1  para-design">Phone:<span class="footer-span phone-span">(+230)
+                                        58057310</span>
+                                </p>
+                            </a>
+                            <a href="">
+                                <h3 class="footer-span phone-span1"> (+230) 58290670</h3>
+                            </a>
+                        </div>
+                        <div class="contact-gap">
+                            <a href="">
+                                <p class="footer-p2  para-design">Mail:<span
+                                        class="footer-span info-span">info@focusphotography.ru</span> </p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-info3">
+                        <h3 class="footer-h">NEWSLETTER SIGNUP</h3>
+                        <p class="footer-p para-design">Be sure to subscribe to get in touch with all our exclusive
+                            deals.
+                        </p>
+                        <p class="footer-p1  para-design">Don't worry, we won't spam you.</p>
+                        <input type="text" name="" class="footer-input">
+                        <button class="footer-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="copyright">
+        <div class="container">
+            <div class="copy-info">
+                <h3 class="copy-h3">Focus Photography | BRN C18155018 | Copyright © 2018- 2019</h3>
+                <div class="copy-box">
+                    <a href="https://en-gb.facebook.com/"><i class="fa fa-facebook color-box"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/"> <i class="fa fa-instagram color-box"
+                            aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/?lang=en"> <i class="fa fa-twitter color-box"
+                            aria-hidden="true"></i></a>
+                    <a href="https://vk.com/?lang=en"> <i class="fa fa-vk color-box" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- light gallery -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/autoplay/lg-autoplay.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/zoom/lg-zoom.min.js    "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/pager/lg-pager.min.js    "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/hash/lg-hash.min.js    "></script>
+
+    <!--Add JS links if you want default styling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <!-- Add SWIPER-JS link if you want default styling -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <!-- Isotope -->
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+
+<!-- search -->
+<script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+      var element = document.getElementById("search-style");
+      element.classList.add("mystyle");
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".nav-item ").hover(function () {
+                $(this).toggleClass("active ");
+            });
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        $('.banner-wrapper').slick({
+            infinite: true,
+            speed: 200,
+            fade: true,
+            infinite: true,
+            cssEase: 'linear',
+            autoplay: true,
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+
+            var mySwiper = new Swiper(".about-slider ", {
+                pagination: '.swiper-pagination',
+                slidesPerView: 3,
+                centeredSlides: true,
+                paginationClickable: true,
+                loop: true,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: ".swiper-button-next ",
+                    prevEl: ".swiper-button-prev "
+                },
+                breakpoints: {
+                    // when window width is <= 499px
+                    320: {
+                        slidesPerView: 1,
+
+                    },
+
+                    1400: {
+                        slidesPerView: 3,
+                    }
+                }
+
+            });
+        });
+    </script>
+    <!-- review slider Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".review-slider", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <script>
+
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            getSortData: {
+                name: function (element) {
+                    return $(element).text();
+                }
+            }
+        });
+        $('.filter button').on("click", function () {
+            var value = $(this).attr('data-name');
+            $grid.isotope({
+                filter: value
+            });
+            $('.filter button').removeClass('active');
+            $(this).addClass('active');
+        })
+        $('.sort button').on("click", function () {
+            var value = $(this).attr('data-name');
+            $grid.isotope({
+                sortBy: value
+            });
+            $('.sort button').removeClass('active');
+            $(this).addClass('active');
+        });
+
+
+    </script>
+    <!-- <script>
+        lightGallery(document.getElementById('gallery'), {
+    thumbnail:true,
+    autoplay:true,
+    pager:true,
+});  -->
+    <!-- <script type="text/javascript">
+        lightGallery(document.getElementById('gallery'), {      
+            plugins: [lgZoom, lgAutoplay,  lgFullscreen , lgHash, lgPager,  lgThumbnail],
+            speed: 500, 
+            exThumbImage: 'data-external-thumb-image',
+        });
+
+        // lightGallery(document.getElementById('gallery'));
+
+        // $(".iso-overlay").on("click", () => {
+        //     $("#gallery .grid-item:first-child > .iso-overlay").trigger("click");
+        // });
+
+
+    </script>-->
+      <script>
+          lightGallery(document.getElementById('gallery'), {
+    selector: '.iso-overlay'
+});
+      </script>
+    
+
+</body>
+
+</html>
