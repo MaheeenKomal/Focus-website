@@ -433,8 +433,8 @@ button {
     width: 28px;
     height: 28px;
     overflow: hidden;
-    text-align: center;
-    margin: auto;
+    /* text-align: center; */
+    /* margin: auto; */
 }
 
 #header .display-search {
@@ -1699,6 +1699,9 @@ width:100%;
 
 @media(max-width: 1200px) {
     /* header */
+    #header .nav-search{
+        margin: auto;
+    }
     #header .nav-link {
         text-align: center;
     }
@@ -1882,6 +1885,7 @@ width:100%;
         margin-top: 15px;
         padding: 18px 10px;
     }
+ 
     #header .chambre-head-item {
         max-width: 140px;
     }
